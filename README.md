@@ -65,10 +65,6 @@ All datasets are provided as CSV files in the `data/` folder.
 - Referential integrity maintained
 - Indexes created for performance optimization
 
-Schema creation is implemented using:
-
-```sql
-sp_create_retail_store_schema
 
 🔍 Data Validation (Phase 1)
 
