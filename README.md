@@ -211,7 +211,6 @@ RetailX-SQL-Analytics/
 │
 └── README.md
 
-Hi, I’m Shreesudhan Elangovan, a data analytics professional with a strong interest in SQL, business analytics, and data-driven decision-making.  
-This project reflects my approach to solving real business problems using structured data analysis.
+Hi, I’m Shreesudhan Elangovan, a Business Analyst with a strong focus on SQL-driven analysis, business insights, and data-informed decision-making. This project demonstrates my approach to translating raw business data into meaningful insights that support strategic planning, performance improvement, and stakeholder decision-making.
 
 📫 Feel free to connect or explore more projects on my GitHub!
