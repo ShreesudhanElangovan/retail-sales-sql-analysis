@@ -65,5 +65,34 @@ BEGIN
     INNER JOIN customers c 
         ON o.customer_id = c.customer_id
     GROUP BY c.customer_id
-    HAVING COUNT(o.o
+    HAVING COUNT(o.order_id) > 1
+    ORDER BY total_orders DESC;
 
+    -- =====================================
+    -- Lost / Inactive Customers
+    -- Customers who did not place orders
+    -- in the most recent year
+    -- =====================================
+
+    WITH max_year AS (
+        SELECT 
+            MAX(YEAR(order_date)) AS latest_year 
+        FROM orders
+    ),
+    customer_last_year AS (
+        SELECT 
+            customer_id, 
+            MAX(YEAR(order_date)) AS last_order_year
+        FROM orders
+        GROUP BY customer_id
+    )
+    SELECT
+        c.customer_id,
+        c.last_order_year
+    FROM customer_last_year c
+    CROSS JOIN max_year m
+    WHERE c.last_order_year < m.latest_year;
+
+END $$
+
+DELIMITER ;
