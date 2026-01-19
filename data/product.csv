@@ -1,0 +1,51 @@
+product_id,product_name,category,cost_price,selling_price
+1,tablet stand,Electronics,77,91
+2,Water Bottle,Stationery,76,195
+3,Noise Cancelling Headset,Accessories,151,266
+4,Notebook Pro,Stationery,18,54
+5,StandingDesk,Accessories,175,231
+6,USB Hub,Electronics,51,88
+7,keyboard,Stationery,160,202
+8,Desk Organizer,Furniture,86,128
+9,Bluetooth Headphones,Furniture,20,82
+10,Keyboard,Stationery,192,280
+11,Notebook Pro,Furniture,80,146
+12,Mouse Pad,Furniture,188,247
+13,pen set,Electronics,125,211
+14,Notebook Pack,Accessories,186,205
+15,desk lamp,Accessories,166,286
+16,notebook pro,Furniture,31,126
+17,PortableSSD,Stationery,67,156
+18,Standing Desk,Accessories,43,127
+19,Portable SSD,Furniture,14,98
+20,Notebook Pro,Stationery,161,227
+21,Portable SSD,Accessories,151,198
+22,webcam,Stationery,11,49
+23,notebook pro,Accessories,169,261
+24,Wireless Mouse,Furniture,111,140
+25,USB Hub,Stationery,110,160
+26,USB Hub,Accessories,88,176
+27,Pen Set,Stationery,197,215
+28,Pen Set,Furniture,134,162
+29,Water Bottle,Electronics,115,126
+30,Desk Organizer,Accessories,124,226
+31,notebookpack,Stationery,129,204
+32,noise cancelling headset,Furniture,156,195
+33,MousePad,Accessories,30,150
+34,Portable SSD,Stationery,48,110
+35,Tablet Stand,Accessories,188,226
+36,Monitor,Stationery,150,175
+37,Mouse Pad,Furniture,135,158
+38,Tablet Stand,Stationery,178,232
+39,Standing Desk,Furniture,55,65
+40,Desk Organizer,Stationery,64,159
+41,Laptop Stand,Stationery,132,219
+42,Keyboard,Stationery,11,37
+43,Bluetooth Headphones,Accessories,29,75
+44,mouse pad,Accessories,198,256
+45,NotebookPro,Accessories,142,157
+46,desk lamp,Furniture,153,217
+47,Standing Desk,Stationery,129,246
+48,Laptop Stand,Accessories,34,148
+49,Desk Organizer,Electronics,19,66
+50,monitor,Electronics,176,288
