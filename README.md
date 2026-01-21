@@ -12,54 +12,45 @@ The primary objective of this analysis is to:
 
 Identify key drivers of revenue and profitability and uncover actionable improvement opportunities across products, customers, orders, and time.
 
-🏢 Role & Context
 
-Role: Business Analyst
-
-Reporting To: Analytics Manager
-
-Business Type: E-commerce Retail
-
-As part of the analytics team, my responsibilities included:
-
-Validating raw transactional data
-
-Designing a reliable analytical schema
-
-Performing revenue, product, customer, and order analysis
-
-Translating SQL outputs into business-ready insights and dashboards
-
-🗂️ Dataset Description
+🗂️ Dataset Overview
 
 The analysis is based on four relational tables:
 
-Customers
-Column	Description
-customer_id	Unique customer identifier
-customer_name	Customer name
-country	Customer country
-signup_date	Registration date
-Products
-Column	Description
-product_id	Unique product identifier
-product_name	Product name
-category	Product category
-cost_price	Cost to company
-selling_price	Selling price
-Orders
-Column	Description
-order_id	Unique order identifier
-customer_id	Customer placing the order
-order_date	Order date
-region	Sales region
-Order Items
-Column	Description
-order_item_id	Unique order item
-order_id	Order reference
-product_id	Product sold
-quantity	Units sold
-discount	Discount applied
+1.Customer
+| Column Name   | Description                |
+| ------------- | -------------------------- |
+| customer_id   | Unique customer identifier |
+| customer_name | Name of the customer       |
+| country       | Customer’s country         |
+| signup_date   | Date the customer joined   |
+
+2.Product
+| Column Name   | Description               |
+| ------------- | ------------------------- |
+| product_id    | Unique product identifier |
+| product_name  | Product name              |
+| category      | Product category          |
+| cost_price    | Cost to company           |
+| selling_price | Selling price             |
+
+3. Orders
+| Column Name | Description                   |
+| ----------- | ----------------------------- |
+| order_id    | Unique order identifier       |
+| customer_id | Customer who placed the order |
+| order_date  | Date of order                 |
+| region      | Sales region                  |
+
+4. Order Items
+| Column Name   | Description          |
+| ------------- | -------------------- |
+| order_item_id | Unique order item ID |
+| order_id      | Order reference      |
+| product_id    | Product sold         |
+| quantity      | Number of units sold |
+| discount      | Discount applied     |
+
 🏗️ Schema Design
 
 Fully normalized relational schema
@@ -76,7 +67,7 @@ All schema creation logic is implemented using:
 
 🔍 Data Validation & Quality Checks (Phase 1)
 
-Before analysis, comprehensive data quality checks were performed:
+Comprehensive data quality checks were performed before analysis:
 
 Row count validation across all tables
 
@@ -113,7 +104,7 @@ Product Performance
 
 High-volume, low-margin products
 
-Best product per category
+Best-performing product in each category
 
 Discount-heavy products impacting profitability
 
@@ -131,7 +122,7 @@ Order Analysis
 
 Orders with unusually high item quantities
 
-Orders where total discounts exceed profit
+Orders where total discounts exceed total profit
 
 All analysis is implemented using modular stored procedures:
 
@@ -175,21 +166,21 @@ Use monthly revenue trends to improve inventory and promotion planning
 
 📊 Power BI Executive Dashboard
 
-An interactive Power BI dashboard was built to translate SQL insights into executive-ready visuals.
+An interactive Power BI dashboard was developed to translate SQL insights into executive-ready visuals.
 
 Dashboard Highlights
 
 KPI Cards: Revenue, Profit, Margin, Orders, AOV
 
-Monthly revenue & margin trends
+Monthly revenue and profit margin trends
 
 Revenue contribution by category
 
 Top 5 products by revenue
 
-High-value customers table
+High-value customers overview
 
-Discount impact on profitability analysis
+Discount impact on profitability
 
 📁 Dashboard files:
 
@@ -199,7 +190,7 @@ Discount impact on profitability analysis
 
 📄 Case Study Document
 
-A full business storytelling document suitable for interviews and recruiter review:
+A full business storytelling case study suitable for interviews and recruiter review:
 
 👉 docs/RetailX_SQL_Analytics_Case_Study.docx
 
@@ -219,35 +210,12 @@ GitHub
 RetailX-SQL-Analytics/
 │
 ├── schema/
-│   ├── create_database.sql
-│   └── sp_create_retail_store_schema.sql
-│
 ├── data_quality/
-│   └── sp_data_quality_checks.sql
-│
 ├── analysis/
-│   ├── sp_revenue_analysis.sql
-│   ├── sp_product_analysis.sql
-│   ├── sp_customer_analysis.sql
-│   └── sp_order_analysis.sql
-│
 ├── data/
-│   ├── customers.csv
-│   ├── products.csv
-│   ├── orders.csv
-│   └── order_items.csv
-│
 ├── insights/
-│   ├── key_insights.md
-│   └── recommendations.md
-│
 ├── dashboard/
-│   ├── RetailX_Revenue_Profitability_Dashboard.pbix
-│   └── dashboard_screenshot.png
-│
 ├── docs/
-│   └── RetailX_SQL_Analytics_Case_Study.docx
-│
 └── README.md
 
 👋 About Me
