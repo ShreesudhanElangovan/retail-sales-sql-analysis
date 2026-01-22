@@ -51,6 +51,7 @@ The analysis is based on four relational tables:
 | quantity      | Number of units sold |
 | discount      | Discount applied     |
 
+
 🏗️ Schema Design
 
 Fully normalized relational schema
